@@ -1,12 +1,13 @@
 function [ vk_1, w_i ] = vk_1( x, k, x_i, H_n1, n )
+% y, z statt syms
 %tic
 
 w = x(k);
 syms y;
 syms z;
 o = 1;
-p = 1;
-%syms p;
+%p = 1;
+syms p;
 q = [1/8,1/8,1/8,1/8,1/8,1/8,1/8,1/8];
 
 

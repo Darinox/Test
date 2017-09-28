@@ -1,5 +1,5 @@
 function [ x_i, H_n1 ] = Gauss_Hermite(n)
-
+% sym loswerden
 syms y;
 o = 1;
 syms p;

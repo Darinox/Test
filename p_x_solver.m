@@ -1,4 +1,5 @@
 function [ Nullsein ] = p_x_solver( R, x, n, x_gewaehlt)
+% p muss mit rein
 tic
 n1 = 4;
 [x_i, H_n1] = Gauss_Hermite(n1);
