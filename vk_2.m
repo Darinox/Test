@@ -1,12 +1,10 @@
-function [ vk_2 ] = vk_2( x, k, x_i, polynom, n )
+function [ vk_2 ] = vk_2( x, k, x_i, polynom, n, p )
 %tic
 
 w = x(k);
 syms y;
 syms z;
 o = 1;
-p = 1;
-%syms p;
 q = [1/8,1/8,1/8,1/8,1/8,1/8,1/8,1/8];
 
 
@@ -26,9 +24,10 @@ H_n1 = 0;
 %tic
 for k2 = [1:1:n]
     for k1 = [1:1:n+1]
-        H_n1 = H_n1 + polynom(k1)*x_k1(k2)^(k1-1);
+        H_n1 = H_n1 + polynom(k1)*(sqrt(2)*x_k1(k2))^(k1-1);
     end
 end
+H_n1 = 2^(n/2)*H_n1;
 %toc
 %%%%%%%%%%%%%%%%%%%%%%
 

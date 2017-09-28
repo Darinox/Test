@@ -1,4 +1,4 @@
-function [ Nullsein ] = p_x_solver( R, x, n, x_gewaehlt)
+function [ Nullsein ] = p_x_solver( R, x, n, x_gewaehlt, p)
 % p muss mit rein
 tic
 n1 = 4;
@@ -6,7 +6,6 @@ n1 = 4;
 % o_1; vk_1; vk_2
 K = length(x);
 q = [1/8, 1/8, 1/8, 1/8, 1/8, 1/8, 1/8, 1/8];
-syms p;
 
 Teil_1_oben = 0;
 for k1 = [1:1:K]
