@@ -1,4 +1,4 @@
-function [ vk_1, w_i ] = vk_1( x, k, x_i, polynom, n_n, p )
+function [ vk_1 ] = vk_1( x, k, x_i, polynom, n_n, p )
 
 w = x(k);
 o = 1;
