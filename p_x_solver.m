@@ -1,4 +1,4 @@
-function [ Nullsein ] = p_x_solver( R, x, n, n_n, x_gewaehlt, p)
+function [ Nullsein ] = p_x_solver( R, x, n, n_n, x_gewaehlt, p )
 % p muss mit rein
 tic
 [x_i, poly] = Gauss_Hermite(n_n);

@@ -19,14 +19,14 @@ vk_2_oben = 0;
 
 
 for k1 = [1:1:n_n]
-    w_i = (2^(n_n-1)*factorial(n_n)*sqrt(pi))/(n_n^2*H_n1(x_k1(k1), poly, n_n)^2);
+    w_i = (2^(n_n-1)*factorial(n_n)*sqrt(pi))/(n_n^2*H_n1(x_k1(k1), polynom, n_n)^2);
     f_i = (1/sqrt(2*pi*o^2)^(1/(1+p)) * ((exp(-((x_k1(k1)^2 -2*x_k1(k1)*x +x.^2)/(2*o^2)))).^(1/(1+p))*q'))^p;
     
     vk_1_unten =  vk_1_unten +A*sqrt(B)*w_i*f_i;
 end
 
 for k1 = [1:1:n_n]
-    w_i = (2^(n_n-1)*factorial(n_n)*sqrt(pi))/(n_n^2*H_n1(x_k1(k1), poly, n_n)^2);
+    w_i = (2^(n_n-1)*factorial(n_n)*sqrt(pi))/(n_n^2*H_n1(x_k1(k1), polynom, n_n)^2);
     
     f_i = (1/sqrt(2*pi*o^2)^(1/(1+p)) * ((exp(-((x_k1(k1)^2 -2*x_k1(k1)*x +x.^2)/(2*o^2)))).^(1/(1+p))*q'))^p;
     p_yk = 1/sqrt(2*pi*o^2) * exp(-((x_k1(k1).^2 -2*x_k1(k1)'*w +w.^2)/(2*o^2)));
