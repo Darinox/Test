@@ -3,7 +3,7 @@ function [ vk_1 ] = vk_1( x, k, x_i, polynom, n_n, p )
 w = x(k);
 o = 1;
 q = [1/8,1/8,1/8,1/8,1/8,1/8,1/8,1/8];
-A = (1/sqrt(2*pi*o))^(1/(1+p));
+A = (1/sqrt(2*pi*o^2))^(1/(1+p));
 B = 2*o^2 +2*o^2*p;
 x_k1 = sqrt(B)*x_i + x(k);
 

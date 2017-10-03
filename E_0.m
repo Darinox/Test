@@ -1,6 +1,6 @@
 function [ E_0 ] = E_0( x, x_i, polynom, n_n, q, p )
 o = 1;
-A = (1/sqrt(2*pi*o))^(1/(1+p));
+A = (1/sqrt(2*pi*o^2))^(1/(1+p));
 B = 2*o^2 +2*o^2*p;
 Sum_q_p = 0;
 for k = [1:1:length(q)]

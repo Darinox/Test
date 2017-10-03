@@ -8,7 +8,7 @@ q = [1/8,1/8,1/8,1/8,1/8,1/8,1/8,1/8];
 
 % Das darüber ist die Vorbereitung der Gauß-Hermite-Quadrature
 
-A = (1/sqrt(2*pi*o))^(1/(1+p));
+A = (1/sqrt(2*pi*o^2))^(1/(1+p));
 B = 2*o^2 +2*o^2*p;
 x_k1 = sqrt(B)*x_i + x(k);
 
